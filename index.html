@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeões da Formula 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="dados.js">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -14,40 +17,18 @@
     <main>
         <section>
             <input type="text" name="ano" id="iano" placeholder="Digite o ano de disputa">
-            <button>Pesquisar</button>
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Ayrton Senna</a>
-                </h2>
-                <p class="descricao-meta">Ayrton Senna da Silva foi um piloto brasileiro de Fórmula 1, considerado um dos maiores de todos os tempos. Conhecido por sua habilidade excepcional ao volante, determinação e paixão pelas corridas, Senna conquistou três títulos mundiais de Fórmula 1 (1988, 1990 e 1991).</p>
-                <a href="https://pt.wikipedia.org/wiki/Ayrton_Senna" target="_blank">Mais informações</a>
-            </div>
 
-            <div class="item-resultado">
-                    <h2>
-                        <a href="#" target="_blank">Michael Schumacher</a>
-                    </h2>
-                    <p class="descricao-meta">Michael Schumacher é um ex-piloto alemão de Fórmula 1, considerado um dos maiores de todos os tempos. Conquistou sete títulos mundiais de pilotos, um recorde que perdurou por mais de uma década. É conhecido por sua consistência e habilidade em ultrapassagens.</p>
-                    <a href="https://pt.wikipedia.org/wiki/Michael_Schumacher" target="_blank">Mais informações</a>
-            </div>
-                
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Lewis Hamilton</a>
-                </h2>
-                <p class="descricao-meta">Lewis Hamilton é um piloto britânico de Fórmula 1, um dos mais bem-sucedidos da história da categoria. Com múltiplos títulos mundiais, Hamilton é conhecido por sua velocidade e habilidade em corridas molhadas.</p>
-                <a href="https://pt.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">Mais informações</a>
-            </div>
-
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
+
     </main>
 
     <footer>
         <p>2024 - Campeões da Formula 1.<br>Todos os direitos reservados. Siga-me no <a href="https://github.com/devdiegoSE" target="_blank">GitHub</a></p>
     </footer>
-
+    <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
